@@ -1,4 +1,5 @@
 exports.statusCode ={
-    internaleServerErrorCode:500
+    internaleServerErrorCode:500,
+    NotFound:404 
 
 }
