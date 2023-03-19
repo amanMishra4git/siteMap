@@ -1,0 +1,19 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.6",
+    "mongoose": "^6.2.0",
+    "sitemap": "^6.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
