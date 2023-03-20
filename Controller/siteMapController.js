@@ -26,7 +26,7 @@ const Url = require('../Model/urlModel');
 const messages = require('../Constant/messages');
 const statusCode = require('../Constant/statusCodes');
 
-// Generate sitemap and return it as a gzip-compressed XML response
+
 exports.generateSitemap = async (req, res) => {
   try {
     // Retrieve all URLs from MongoDB
