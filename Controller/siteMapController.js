@@ -36,6 +36,7 @@
 const Url = require('../Model/urlModel');
 const messages = require('../Constant/messages');
 const statusCode = require('../Constant/statusCodes');
+const fs = require('fs');
 
 exports.generateSitemap = async (req, res) => {
   try {
@@ -55,9 +56,11 @@ exports.generateSitemap = async (req, res) => {
     });
     xml += '</urlset>';
 
-    // Send sitemap as an XML response
-    res.header('Content-Type', 'application/xml');
-    res.send(xml);
+    // fs.writeFileSync('sitemap.txt', xml);
+    fs.writeFileSync('sitemap.xml', xml);
+    
+
+    res.status(statusCode.statusCode.successStatusCode).send(messages.responseMessages.sitemapGenerated);
   } catch (err) {
     console.error(err);
     res.status(statusCode.statusCode.internaleServerErrorCode).end();

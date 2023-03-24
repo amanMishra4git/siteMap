@@ -1,7 +1,7 @@
 {
-  "name": "your-project-name",
+  "name": "Generating Site",
   "version": "1.0.0",
-  "description": "Your project description",
+  "description": "Generating Site from DB URL.",
   "main": "app.js",
   "scripts": {
     "start": "nodemon index.js"
